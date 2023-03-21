@@ -27,10 +27,10 @@ namespace Discount.API.Extensions
 					command.ExecuteNonQuery();
 
 					command.CommandText = @"CREATE TABLE Coupon(
-												ID SERIAL PRIMARY KEY         NOT NULL,
-												ProductName     VARCHAR(24) NOT NULL,
-												Description     TEXT,
-												Amount          INT
+												ID SERIAL PRIMARY KEY,
+												ProductName VARCHAR(24) NOT NULL,
+												Description TEXT,
+												Amount INT
 										)";
 					command.ExecuteNonQuery();
 
